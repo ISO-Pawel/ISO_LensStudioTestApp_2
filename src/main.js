@@ -12,7 +12,9 @@ document.getElementById('canvas').replaceWith(session.output.live)
 
 const {lensess} = await cameraKit.lensRepository.loadLensGroups(['5918b6b2-694e-4734-a8d3-78488dae7bfb'])
 
-session.applyLens(lenses[2])
+//session.applyLens(lenses[2])
+session.applyLens('3b21bf94-5723-494d-91a9-608a384dcfe4')
+
 let mediaStream = await navigator.mediaDevices.getUserMedia({video: 
     {facingMode: 'environment'}
 })
